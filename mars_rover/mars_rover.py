@@ -11,3 +11,12 @@ class MarsRover:
 
     def get_current_location(self):
         return '{} {}'.format(self.coordinates, self.direction)
+
+    def turn_left(self):
+        self.direction.left()
+
+    def turn_right(self):
+        self.direction.right()
+
+    def move(self):
+        self.coordinates.change(*self.direction.steps_for_move())
