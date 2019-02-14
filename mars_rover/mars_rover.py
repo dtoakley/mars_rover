@@ -19,4 +19,7 @@ class MarsRover:
         self.direction.right()
 
     def move(self):
-        self.coordinates.change(*self.direction.steps_for_move())
+        new_coordinates = self.coordinates.new_coordinates_for_steps(*self.direction.steps_for_move())
+
+        if self.plateau.has_within_bounds(new_coordinates):
+            self.coordinates = new_coordinates
