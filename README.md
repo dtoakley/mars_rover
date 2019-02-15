@@ -42,47 +42,17 @@ MMRMMRMRRM
 5 1 E
 
 
+## Installation
 
+```
+$ virtualenv -p python3 venv
+$ source venv/bin/activate
+$ pip install -r requirements 
+```
 
 ### Running Tests
 
 ```
 $ source venv/bin/activate
-$ python -m unittest discover
+$ pytest
 ```
-
-
-### Notes - TODO: remove
-classes
-
-MarsRover
-knows:
-- coordinates
-- heading 
-can:
-- turnLeft
-- turnRight
-- move
-
-
-Plateau
-- knows it's size
-- 
-
-Direction
-- is an enum
-
-Coordinate
-- isEdge
-
-StringParser 
-- Takes 
-
-
-CommandInterface
-
-    TurnLeftCommand
-    
-    TurnRightCommand
-
-    MoveCommand

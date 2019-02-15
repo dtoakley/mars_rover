@@ -19,5 +19,6 @@ class TestCoordinates:
         new_coordinate = coordinates.new_coordinates_for_steps(*steps)
 
         # then
+        assert isinstance(new_coordinate, Coordinates)
         assert new_coordinate.x_coordinate == expected_x_coordinate
         assert new_coordinate.y_coordinate == expected_y_coordinate
