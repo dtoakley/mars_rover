@@ -29,4 +29,3 @@ class MarsRover:
 
         for command in mars_rover_commands:
             command.execute(self)
-            print(self.get_current_location())

@@ -82,7 +82,6 @@ class TestMarsRover:
         mars_rover = MarsRover(self.plateau, direction, Coordinates(*mars_rover_coordinates))
 
         # when
-        print(mars_rover.get_current_location())
         mars_rover.run(command_string)
 
         # then

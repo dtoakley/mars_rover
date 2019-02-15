@@ -56,3 +56,11 @@ $ pip install -r requirements
 $ source venv/bin/activate
 $ pytest
 ```
+
+And to see a coverage report:
+
+```
+$ source venv/bin/activate
+$ pytest --cov=mars_rover
+```
+
