@@ -1,4 +1,3 @@
-
 from .location import Plateau, Direction, Coordinates
 
 
@@ -23,3 +22,11 @@ class MarsRover:
 
         if self.plateau.has_within_bounds(new_coordinates):
             self.coordinates = new_coordinates
+
+    def run(self, command_string: str) -> None:
+        from .parser import StringCommandParser
+        mars_rover_commands = StringCommandParser(command_string).get_commands()
+
+        for command in mars_rover_commands:
+            command.execute(self)
+            print(self.get_current_location())
