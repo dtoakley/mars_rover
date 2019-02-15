@@ -1,5 +1,3 @@
-import pytest
-
 from mars_rover.parser import StringCommandParser
 from mars_rover.commands import TurnLeftCommand, TurnRightCommand, MoveCommand
 

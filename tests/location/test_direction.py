@@ -40,10 +40,10 @@ class TestDirection:
         assert direction.heading == final_direction
 
     @pytest.mark.parametrize('starting_direction,expected_steps', [
-        (Direction.NORTH, (1, 0)),
-        (Direction.SOUTH, (-1, 0)),
-        (Direction.EAST, (0, 1)),
-        (Direction.WEST, (0, -1)),
+        (Direction.NORTH, (0, 1)),
+        (Direction.SOUTH, (0, -1)),
+        (Direction.EAST, (1, 0)),
+        (Direction.WEST, (-1, 0)),
     ])
     def test_steps_for_move(self, starting_direction, expected_steps):
         # given
