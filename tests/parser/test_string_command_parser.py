@@ -49,4 +49,3 @@ class TestStringCommandParser:
         assert isinstance(commands[0], TurnLeftCommand)
         assert isinstance(commands[1], TurnRightCommand)
         assert isinstance(commands[2], MoveCommand)
-

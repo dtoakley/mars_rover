@@ -43,5 +43,3 @@ class Application:
 if __name__ == '__main__':
     application = Application()
     application.process_input_file()
-
-

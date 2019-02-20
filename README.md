@@ -72,3 +72,19 @@ $ source venv/bin/activate
 $ pytest --cov=mars_rover
 ```
 
+### Linting
+
+```
+$ source venv/bin/activate
+$ flake8 mars_rover
+```
+
+or for the tests:
+
+ 
+```
+$ source venv/bin/activate
+$ flake8 tests
+```
+
+

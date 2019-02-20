@@ -48,4 +48,3 @@ class Direction:
 
     def steps_for_move(self):
         return self.STEP_SIZE_MAPPING[self.heading]
-
